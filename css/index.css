@@ -1,0 +1,124 @@
+:root {
+  --main-black-color: #231f20;
+  --second-color: #462d41;
+  --white-color: #fff;
+  --accent-color: orange;
+  --transition-duration: 0.5s;
+  --transition-timing-function: ease-in-out;
+}
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  color: var(--main-black-color);
+  letter-spacing: -0.8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*============ HEADER =================*/
+.header {
+  background-color: #231f20;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header .container {
+  display: flex;
+}
+
+.header .navigation {
+  display: flex;
+}
+
+.navigation .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 180px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.9px;
+}
+
+.navigation .logo img {
+  margin-right: 15px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-item-link {
+  padding: 37px 0;
+  display: block;
+  color: var(--white-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.9px;
+  transition: var(--transition-duration) var(--transition-timing-function) color;
+}
+
+.navigation-item-link:hover,
+.navigation-item-link:focus {
+  color: var(--accent-color);
+}
+
+.navigation-get-in-touch {
+  margin-left: auto;
+  padding: 37px 28px;
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(18 / 18);
+  letter-spacing: -0.9px;
+  transition: 0.5s ease-in-out background-color;
+}
+
+.navigation-get-in-touch:hover,
+.navigation-get-in-touch:focus {
+  background-color: var(--accent-color);
+}
