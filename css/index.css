@@ -198,3 +198,40 @@ a {
   background-color: var(--white-color);
   color: var(--second-color);
 }
+
+/* Partners section */
+.partners {
+  padding-top: 70px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.partners-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
