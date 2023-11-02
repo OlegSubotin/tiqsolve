@@ -469,3 +469,59 @@ a {
 .how-we-help-item-link:hover .icon {
   transform: rotate(90deg);
 }
+
+/* PRODUCTS SECTION */
+
+.projects {
+  padding-top: 100px;
+}
+
+.projects-title {
+  color: var(--main-black-color);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1; /* 110% */
+  letter-spacing: -4px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-item {
+  width: 370px;
+  border: 1px solid var(--grey-color);
+  border-radius: 10px;
+}
+
+.projects-item img {
+  margin-bottom: 30px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.projects-item .title {
+  color: var(--main-black-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1.2px;
+  margin-bottom: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.projects-item .text {
+  color: var(--darker-grey-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.8px;
+  padding: 0 10px 10px;
+}
