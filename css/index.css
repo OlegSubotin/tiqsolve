@@ -525,3 +525,37 @@ a {
   letter-spacing: -0.8px;
   padding: 0 10px 10px;
 }
+
+/* GET IN TOUCH SECTION */
+.offer {
+  padding-top: 120px;
+  background-color: #231f20;
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(6, 5, 5, 0.6), rgba(5, 5, 5, 0.6)),
+    url(../images/get-in-touch-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.offer-title {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+  letter-spacing: -0.8px;
+  margin-bottom: 30px;
+}
+
+.offer-text {
+  color: var(--grey-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.9px;
+  margin-bottom: 50px;
+}
