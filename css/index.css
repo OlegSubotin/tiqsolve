@@ -63,6 +63,27 @@ button {
   margin: 0 auto;
 }
 
+#popup {
+  height: 100px;
+}
+
+.popup-text {
+  color: var(--grey-color);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  text-align: center;
+  background-color: var(--second-color);
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+
 /*============ HEADER =================*/
 
 .header .container {

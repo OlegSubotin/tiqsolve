@@ -1,6 +1,7 @@
 const TOKEN = "6963624064:AAElHp1ljnlnszJ73x6CjfQ5MpH2UjxZgAE";
 const CHATID = "-4032479615";
 const formEl = document.querySelector(".js-form");
+const popupEl = document.getElementById("popup");
 
 formEl.addEventListener("submit", onFormSubmit);
 
@@ -21,5 +22,12 @@ function onFormSubmit(e) {
   let url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHATID}&text=Mail:  ${mail}  NAME:  ${name}  PHONE:  ${phone}`;
   fetch(url);
 
+  popupEl.classList.remove("visually-hidden");
+  window.setTimeout(hidePopup, 3000);
+
   formEl.reset();
+}
+
+function hidePopup() {
+  popupEl.classList.add("visually-hidden");
 }
