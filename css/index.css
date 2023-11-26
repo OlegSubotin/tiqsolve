@@ -52,6 +52,10 @@ a {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -474,6 +478,7 @@ a {
 
 .projects {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .projects-title {
@@ -558,4 +563,62 @@ a {
   line-height: 1.5; /* 150% */
   letter-spacing: -0.9px;
   margin-bottom: 50px;
+}
+
+.offer-form {
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--grey-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  cursor: pointer;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 30px;
+  border: 1px solid var(--grey-color);
+  border-radius: 5px;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.submit-btn {
+  padding: 17px 29px;
+  border-radius: 30px;
+  border: 1px solid var(--purple-color);
+  background-color: var(--purple-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.9px;
+  margin: 0 auto;
+  display: block;
+  transition: var(--transition-duration) var(--transition-timing-function)
+      background-color,
+    var(--transition-duration) var(--transition-timing-function) color;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  color: var(--purple-color);
+  background-color: rgb(245, 230, 255);
 }
