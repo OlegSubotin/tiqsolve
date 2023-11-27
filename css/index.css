@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 p,
@@ -154,7 +155,7 @@ button {
 .line {
   background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
-  height: 1px;
+  height: 2px;
   position: absolute;
 }
 
@@ -554,9 +555,8 @@ button {
 
 /* GET IN TOUCH SECTION */
 .offer {
-  padding-top: 120px;
   background-color: #231f20;
-  padding: 200px 0;
+  padding: 100px 0;
   background-image: linear-gradient(rgba(6, 5, 5, 0.6), rgba(5, 5, 5, 0.6)),
     url(../images/get-in-touch-bg.jpg);
   background-repeat: no-repeat;
@@ -642,4 +642,115 @@ input:focus {
 .submit-btn:focus {
   color: var(--purple-color);
   background-color: rgb(245, 230, 255);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #180030;
+  padding-top: 100px;
+}
+
+.upper-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  display: block;
+  color: var(--white-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.9px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.footer-location,
+.footer-mail {
+  display: block;
+  color: var(--white-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.9px;
+  margin-bottom: 20px;
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-location:hover,
+.footer-location:focus,
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--darker-grey-color);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socials-item .link {
+  color: var(--white-color);
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+
+.socials-item .link:hover,
+.socials-item .link:focus {
+  color: var(--darker-grey-color);
+}
+
+.socials-item .icon {
+  fill: currentColor;
+}
+
+.footer-right .title {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.9px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.footer-navigation-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-navigation-item-link {
+  display: block;
+  color: var(--white-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.9px;
+  margin-bottom: 20px;
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-navigation-item-link:hover,
+.footer-navigation-item-link:focus {
+  color: var(--darker-grey-color);
+}
+
+.copyright {
+  display: block;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.9px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 0;
 }
