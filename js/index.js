@@ -5,26 +5,29 @@ const popupEl = document.getElementById("popup");
 
 formEl.addEventListener("submit", onFormSubmit);
 
-function onFormSubmit(e) {
+async function onFormSubmit(e) {
   e.preventDefault();
 
-  let formItems = e.currentTarget.elements;
-  let mail = formItems.mail.value;
-
-  let name = formItems.name.value;
-
-  let phone = formItems.phone.value;
+  const formElements = e.currentTarget.elements;
+  const mail = formElements.mail.value;
+  const name = formElements.name.value;
+  const phone = formElements.phone.value;
 
   if (phone.trim() === "" && name.trim() === "" && mail.trim() === "") {
-    alert("at least one field must be filled in");
+    alert("At least one field must be filled in");
+    return;
   }
 
-  let url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHATID}&text=Mail:  ${mail}  NAME:  ${name}  PHONE:  ${phone}`;
-  fetch(url);
+  const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHATID}&text=Mail: ${mail} NAME: ${name} PHONE: ${phone}`;
+
+  try {
+    await fetch(url);
+  } catch (error) {
+    console.error("Error sending message to Telegram:", error);
+  }
 
   popupEl.classList.remove("visually-hidden");
   window.setTimeout(hidePopup, 3000);
-
   formEl.reset();
 }
 
